@@ -9,11 +9,12 @@ import { day1 } from "./days/day1";
     for (const day of days) {
         const name = day.name;
         const input = GetInputFromFile(`inputs\\${name}.txt`);
-        const solution = day(input);
+        const [taskA, taskB] = day(input);
 
         console.log(`
         ${name} solution:
-        ${solution}
+            Task A: ${taskA}
+            Task B: ${taskB || "NOPE!"}
         ------------
         `);
     }

@@ -9,7 +9,7 @@ export const day1: AocFunc = (input: string[]): string[] => {
 
     const taskB = input
         .map((v) => Number(v))
-        .map((val, i, arr) => arr.slice(i, i + 3))
+        .map((_, i, arr) => arr.slice(i, i + 3))
         .filter((v) => v.length == 3)
         .filter((v, i , arr) => {
             const add = (a: number, b: number): number => a + b;
