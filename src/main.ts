@@ -1,9 +1,9 @@
-import { GetInputFromFile } from "./AocHelpers";
-import { day1 } from "./days/day1";
+import { GetInputFromFile } from "./helpers/AocHelpers";
+import * as d from "./days";
 
 (() => {
     const days = [
-        day1
+        d.day1
     ];
 
     for (const day of days) {
