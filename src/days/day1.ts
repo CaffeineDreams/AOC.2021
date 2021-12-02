@@ -1,6 +1,6 @@
 import { AocFunc } from "../helpers/AocHelpers";
 
-export const day1: AocFunc = (input: string[]): string[] => {
+export const day1: AocFunc = (input): string[] => {
     const taskA = input
         .map((v) => Number(v))
         .filter((v, i, arr) => arr[i + 1] > v)

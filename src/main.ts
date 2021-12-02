@@ -3,7 +3,8 @@ import * as d from "./days";
 
 (() => {
     const days = [
-        d.day1
+        d.day1,
+        d.day2
     ];
 
     for (const day of days) {
